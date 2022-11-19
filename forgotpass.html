@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="forgotpass\forgotpass.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script
+      src="https://kit.fontawesome.com/0f45e95927.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>forgotpass</title>
+  </head>
+  <body>
+    <div class="container" id="blur">
+      <div class="grid-item2">
+        <div class="logo">
+          <img src="signin\download_low.png" alt="meulabs logo" />
+        </div>
+        <h1>Student Management System</h1>
+
+        <div class="form">
+          <div class="form-item">
+            <input type="text" placeholder="Please enter your name" id="user" />
+            <br />
+            <input type="email" placeholder="Please enter your email" id="pass"
+          </div>
+          <div class="button-form">
+            <a href="index.html" class="forgotpass">
+              <label>cancel</label>
+            </a>
+
+            <div class="login-button">
+              <a href="#">
+                <button value="">Send</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="translate">
+          <a href="#">
+            <i class="fa-solid fa-globe fa-2xl"></i>
+          </a>
+        </div>
+        <div class="help">
+          <a href="#">
+            <i class="fa-solid fa-question"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup">
+      <i class="fa-solid fa-check"></i>
+      <h3>Thank You</h3>
+      <h4>Your request has been submitted</h4>
+      <button type="button" class="close-btn">Close</button>
+    </div>
+    <script type="text/javascript">
+      function toggle() {
+        var blur = document.getElementById("blur");
+        blur.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

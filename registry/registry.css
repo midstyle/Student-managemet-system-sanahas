@@ -1,0 +1,115 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto ;
+    gap: 0px;
+    padding: 0px;
+    width: 1100px;
+    height: 600px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 70px;
+    box-shadow: 5px 5px 15px #B6B6B6;
+    overflow-y: auto;
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  .grid-container > div {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+    padding: 15px;
+    margin: left;
+    height: 5rem;
+  }
+
+body {
+    overflow: hidden;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+    font-family:'Montserrat', sans-serif ;
+    background-image: url("normal_bg.jpg");
+}
+
+.rounded-corner1{
+    border-radius: 30px 0 0 0;
+}
+.rounded-corner2{
+    border-radius: 0px 30px 0 0;
+}
+.rounded-corner3{
+    border-radius: 0px 0 0px 30px;
+}
+.rounded-corner4{
+    border-radius: 00px 0 30px 0px;
+}
+.green-colour{
+    background-color:#5BDF35;
+}
+.orange-colour{
+    background-color: #F6A62F;
+}
+.red-colour{
+    background-color: #F33B3B;
+}
+
+button {
+    position: relative;
+    top: 1px;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    padding: 3px;
+    box-shadow: 0px 0px 25px 5px rgb(102, 102, 102);
+    transition: 0.4s ease;
+}
+
+.adding-removing{
+    position: relative;
+    white-space: nowrap;
+    left: 660px;
+}
+.adding-icon{
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+.minus-icon{
+    display: inline-block;
+}
+button:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    width: 50px;
+    height: 50px;
+}
+
+.edit:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+
+.menu{
+    background-color: #ebc386;
+    float: left;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(240, 132, 30);
+    border-radius: 10px;
+  }
+
+

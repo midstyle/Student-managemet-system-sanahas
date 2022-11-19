@@ -1,0 +1,91 @@
+
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("Untitled design.png");
+    background-repeat: no-repeat;
+}
+
+.container {
+    padding: 3em;
+    display: grid;
+    grid-gap: 2em;
+    
+}
+.container#blur.active{
+    filter: blur(10px);
+}
+.forgotpass {
+    position: relative;
+    width: 150px;
+    border: none;
+    background-color: rgb(235, 191, 110);
+    border-radius: 30px;
+    padding: 15px;
+    top:33px;
+    right: 170px;
+    text-decoration: none;
+}
+
+.forgotpass:hover {
+    opacity: 0.8;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    width: 150px;
+    height: 120;
+    border: none;
+    background-color: rgb(235, 191, 110);
+    border-radius: 30px;
+    padding: 12.5px;
+    position: relative;
+    left:180px ;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+input[type=text], input[type=password] {
+    width: 30rem;
+    height: 3rem;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    background-color: antiquewhite;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 10px 0px 10px 0px;
+  }
+input {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.material-symbols-rounded {
+    font-size: 50px !important;
+    width: 100px;
+    position: relative;
+    bottom: 500px;
+}
+
+
+.translate {
+    font-size: 20px;
+    top: 50px;
+    color: black;
+    position: absolute;
+    bottom: 700px
+}
+
+.help {
+    float: right;
+    position: relative;
+    bottom: 570px;
+}
