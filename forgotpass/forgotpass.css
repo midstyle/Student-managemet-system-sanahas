@@ -2,7 +2,7 @@
 body {
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    background-image: url("Untitled design.png");
+    background-color: rgb(255, 255, 255);
     background-repeat: no-repeat;
 }
 
@@ -12,8 +12,10 @@ body {
     grid-gap: 2em;
     
 }
-.container#blur.active{
+.grid-item2#blur.active{
     filter: blur(10px);
+    pointer-events: none;
+    user-select: none;
 }
 .forgotpass {
     position: relative;
@@ -88,16 +90,33 @@ h1 {
     bottom: 570px;
 }
 
-.popup {
+#popup {
+    position: fixed;
     background-color: rgb(249, 194, 123);
     border-radius: 2em;
     padding: 30px;
     width: 500px;
     border: 2px solid black;
+    top: 40%;
+    left: 50%;
     transform: translate(-50%,-50%);
+    box-shadow: 0 5 20px rgba(0, 0, 0, 0.30);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
 }
 
-.popup button{
+#popup button{
     position: relative;
     left: 0;
+}
+
+.container#blur.active{
+    filter: blur(10px);
+}
+
+#popup.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
 }

@@ -23,8 +23,8 @@
     <title>forgotpass</title>
   </head>
   <body>
-    <div class="container" id="blur">
-      <div class="grid-item2">
+    <div class="container" >
+      <div class="grid-item2" id="blur">
         <div class="logo">
           <img src="signin\download_low.png" alt="meulabs logo" />
         </div>
@@ -38,11 +38,11 @@
           </div>
           <div class="button-form">
             <a href="index.html" class="forgotpass">
-              <label>cancel</label>
+              <label>Exit</label>
             </a>
 
             <div class="login-button">
-              <a href="#">
+              <a href="#" onclick="toggle()">
                 <button value="">Send</button>
               </a>
             </div>
@@ -60,18 +60,21 @@
         </div>
       </div>
     </div>
-
-    <div class="popup">
-      <i class="fa-solid fa-check"></i>
-      <h3>Thank You</h3>
-      <h4>Your request has been submitted</h4>
-      <button type="button" class="close-btn">Close</button>
-    </div>
     <script type="text/javascript">
       function toggle() {
         var blur = document.getElementById("blur");
         blur.classList.toggle("active");
+        var popup = document.getElementById("popup");
+        popup.classList.toggle("active");
       }
     </script>
+    <div id="popup">
+      <i class="fa-solid fa-check"></i>
+      <h3>Thank You</h3>
+      <h4>Your request has been submitted</h4>
+      <a href="#" onclick="toggle()">
+        <button value="">Close</button>
+      </a>
+    </div>
   </body>
 </html>
