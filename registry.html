@@ -18,9 +18,52 @@
     <script src="script.js"></script>
     <title>Registry</title>
   </head>
-  <body >
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <div class="menumain">
+        <a href="#" class="user" data-hover="User"
+          ><i class="fa-regular fa-user"></i
+        ></a>
+        <a href="#" class="calendar" data-hover="Calendar"
+          ><i class="fa-solid fa-calendar-days"></i
+        ></a>
+        <a href="#" class="profile" data-hover="Profile"
+          ><i class="fa-solid fa-id-card"></i
+        ></a>
+        <a href="#" class="registry" data-hover="Registry"
+          ><i class="fa-solid fa-book"></i
+        ></a>
+        <a href="#" data-hover="Students &amp; Classes"
+          ><i class="fa-solid fa-user-graduate"></i
+        ></a>
+        <br />
+        <div class="menusub">
+          <a href="#" data-hover="exit"
+            ><i class="fa-solid fa-right-from-bracket"></i
+          ></a>
+          <a href="#" data-hover="help"><i class="fa-solid fa-question"></i></a>
+        </div>
+      </div>
+      <br />
 
-    
+      <a href="javascript:void(0)" style="padding: 30px; font-size: 15px"
+        >More about us</a
+      >
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <span id="menuicon">
+      <button onclick="toggle()"><i class="fa-solid fa-bars"></i></button>
+    </span>
+
+    <script type="text/javascript">
+      function toggle() {
+        var menu = document.getElementById("mySidenav");
+        menu.classList.toggle("active");
+        var menuicon = document.getElementById("menuicon");
+        menuicon.classList.toggle("active");
+      }
+    </script>
 
     <h1>Registry</h1>
     <div class="grid-container">
@@ -54,7 +97,6 @@
       <div class="edit"><i class="fa-solid fa-pen-to-square"></i></div>
       <div>+94</div>
       <div class="rounded-corner4">comment</div>
-  
     </div>
     <div class="adding-removing">
       <div class="adding-icon">
@@ -68,13 +110,5 @@
         </button>
       </div>
     </div>
-    <nav>
-        <button class="hamburger">
-          <div class="bar">
-            
-          </div>
-        </button>
-    </nav>
-
   </body>
 </html>
