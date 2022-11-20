@@ -2,7 +2,6 @@
 body {
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    background-image: url("Untitled design.png");
     background-repeat: no-repeat;
 }
 
@@ -12,7 +11,7 @@ body {
     grid-gap: 2em;
     
 }
-.container#blur.active{
+.grid-item2#blur.active{
     filter: blur(10px);
 }
 .forgotpass {
@@ -88,4 +87,96 @@ h1 {
     float: right;
     position: relative;
     bottom: 570px;
+}
+
+#popup-trans{
+    text-align: center;
+    border-radius: 2em;
+    background-color: orange;
+    color: white;
+    position: fixed;
+    top: 40%;
+    border: 2px solid orange;
+    width: 200px;
+    padding: 10px;
+    left: 50%;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.30);
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup-trans li{
+    list-style: none;
+    width: 6em;
+    border-radius: 8px;
+    margin: 0;
+    padding: 6px 0;
+}
+
+#popup-trans li:hover{
+    cursor: pointer;
+}
+
+#popup-trans.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.close-btn{
+    transition: 0.3s;
+    top: 85%;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    position: fixed;  
+}
+.close-btn:hover{
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    opacity: 1;
+}
+
+#popup-help{
+    text-align: center;
+    border-radius: 2em;
+    background-color: orange;
+    color: white;
+    position: fixed;
+    top: 40%;
+    border: 2px solid orange;
+    width: 200px;
+    padding: 0 30px 30px;
+    left: 50%;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.30);
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#form2{
+    padding: 4px;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 10px;
+    width: 14em;
+}
+
+#popup-help .close-btn{
+    left: 80%;
+    transition: 0.3s;
+    top: 85%;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    position: fixed;  
+}
+#popup-help.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
 }

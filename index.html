@@ -22,8 +22,8 @@
     <title>Login Page</title>
   </head>
   <body>
-    <div class="container" id="blur">
-      <div class="grid-item2">
+    <div class="container">
+      <div class="grid-item2" id="blur">
         <div class="logo">
           <img src="signin\download_low.png" alt="meulabs logo" />
         </div>
@@ -35,7 +35,7 @@
             <input type="password" placeholder="Password" id="pass"
           </div>
           <div class="button-form">
-            <a href="forgotpass.html" class="forgotpass" onclick="toggle()">
+            <a href="forgotpass.html" class="forgotpass">
               <label>Forgot Pass</label>
             </a>
 
@@ -47,16 +47,58 @@
           </div>
         </div>
         <div class="translate">
-          <a href="#">
+          <a href="#" onclick="toggle()">
             <i class="fa-solid fa-globe fa-2xl"></i>
           </a>
         </div>
         <div class="help">
-          <a href="#">
+          <a href="#" onclick="toggle2()">
             <i class="fa-solid fa-question"></i>
           </a>
         </div>
       </div>
+    </div>
+    <!-- java for blur effect -->
+    <script type="text/javascript">
+      function toggle() {
+        var blur = document.getElementById("blur");
+        blur.classList.toggle("active");
+        var popup = document.getElementById("popup-trans");
+        popup.classList.toggle("active");
+      }
+      function toggle2() {
+        var blur = document.getElementById("blur");
+        blur.classList.toggle("active");
+        var popuph = document.getElementById("popup-help");
+        popuph.classList.toggle("active");
+      }
+    </script>
+    <!-- popup for translate sign -->
+    <div id="popup-trans">
+      <ul>
+        <li>English</li>
+        <li>Sinhala</li>
+        <li>Hindi</li>
+      </ul>
+      <!-- close button -->
+      <a href="#" onclick="toggle()">
+        <button value="" class="close-btn">
+          <i class="fa-solid fa-x"></i>
+        </button>
+      </a>
+    </div>
+    <!-- popup for help sign -->
+    <div id="popup-help">
+      <h3>Need help?</h3>
+      <h3>Contact your admin or supervisor</h3>
+      <div class="form">
+        <input type="email" placeholder="Enter their email" id="form2" />
+      </div>
+      <a href="#" onclick="toggle2()">
+        <button value="" class="close-btn">
+          <i class="fa-solid fa-x"></i>
+        </button>
+      </a>
     </div>
   </body>
 </html>
