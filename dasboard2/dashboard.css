@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    overflow: hidden;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     padding: 20px;
@@ -143,12 +144,25 @@ img {
 }
 
 .sign-out{
-    float: right;
-    bottom: 2px;
-    border: 1px solid #EABB59;
+    margin: 0;
+    text-decoration: none;
+    padding: 5px 0 0 0;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(227, 89, 89);
+
 }
 
 a{
     color: inherit;
 }
 
+.sidebar .small-icons{
+    position: fixed;
+    bottom: 40px; 
+    left: 5%;
+}
