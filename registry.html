@@ -38,7 +38,7 @@
         ></a>
         <br />
         <div class="menusub">
-          <a href="#" data-hover="exit"
+          <a href="dashboard.html" data-hover="exit"
             ><i class="fa-solid fa-right-from-bracket"></i
           ></a>
           <a href="#" data-hover="help"><i class="fa-solid fa-question"></i></a>
@@ -63,10 +63,16 @@
         var menuicon = document.getElementById("menuicon");
         menuicon.classList.toggle("active");
       }
+      function toggle2() {
+        var blur = document.getElementById("blur");
+        blur.classList.toggle("active");
+        var popupc = document.getElementById("popup-contact");
+        popupc.classList.toggle("active");
+      }
     </script>
 
     <h1>Registry</h1>
-    <div class="grid-container">
+    <div class="grid-container" id="blur">
       <div class="rounded-corner1">Name</div>
       <div>Attendence</div>
       <div>Progress Tracker</div>
@@ -75,28 +81,29 @@
       <div>Student 1</div>
       <div>98%</div>
       <div class="green-colour"></div>
-      <div>+94</div>
+      <div><a href="#" onclick="toggle2()">+94</a></div>
       <div>comment</div>
       <div>Student 2</div>
       <div>80%</div>
       <div class="green-colour"></div>
-      <div>+94</div>
+      <div><a href="#" onclick="toggle2()">+94</a></div>
       <div>comment</div>
       <div>Student 3</div>
       <div>98%</div>
       <div class="orange-colour"></div>
-      <div>+94</div>
+      <div><a href="#" onclick="toggle2()">+94</a></div>
       <div>comment</div>
       <div>Student 4</div>
       <div>98%</div>
       <div class="red-colour"></div>
-      <div>+94</div>
+      <div><a href="#" onclick="toggle2()">+94</a></div>
       <div>comment</div>
       <div class="rounded-corner3">Student 5</div>
       <div>98%</div>
       <div class="edit"><i class="fa-solid fa-pen-to-square"></i></div>
-      <div>+94</div>
+      <div><a href="#" onclick="toggle2()">+94</a></div>
       <div class="rounded-corner4">comment</div>
+      
     </div>
     <div class="adding-removing">
       <div class="adding-icon">
@@ -109,6 +116,25 @@
           <i class="fa-solid fa-minus"></i>
         </button>
       </div>
+    </div>
+    
+
+    <div class="contact" id="popup-contact">
+      <h1 class="head">Student's contact</h1>
+      <h1 class="head"></h1>
+      <h2 class="small-head">Personal Contact Details:</h2>
+      <h2 class="small-head">Parent's Contact Details:</h2>
+      <h3 class="info"><i class="fa-solid fa-phone"></i> +94 123-456-789</h3>
+      <h3 class="info"><i class="fa-solid fa-phone"></i> +94 123-456-789</h3>
+      <h3 class="info">
+        <i class="fa-solid fa-house"></i> Lorem, ipsum dolor.
+      </h3>
+      <h3 class="info">
+        <i class="fa-solid fa-house"></i> Lorem, ipsum dolor.
+      </h3>
+      <button value="" class="close-btn" onclick="toggle2()">
+        <i class="fa-solid fa-x"></i>
+      </button>
     </div>
   </body>
 </html>

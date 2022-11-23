@@ -11,7 +11,7 @@
     top: 70px;
     box-shadow: 5px 5px 15px #B6B6B6;
     overflow-y: auto;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 20px 20px 20px 20px;
   }
   
   .grid-container > div {
@@ -24,7 +24,7 @@
   }
 
 body {
-    overflow: hidden;
+  overflow: hidden;
     margin-top: 30px;
     align-items: center;
     text-align: center;
@@ -223,4 +223,85 @@ button:hover{
   position: fixed;
   top: 40px;
   left: 230px;
+}
+
+.contact{
+  padding: 30px 10px;
+  display: grid;
+  position: fixed;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%,-50%);
+  background-color: #ebc386;
+  width: 900px;
+  height: 300px;
+  border-radius: 2em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.5fr 1fr 1fr;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.small-head{
+  margin: 5px 20px;
+  text-align: left;
+}
+.info{
+  height: 2em;
+  width: 14em;
+  border-radius: 20px;
+  background-color: #B6B6B6;
+  text-align: left;
+  margin: 5px 20px;
+  padding: 10px 10px;
+}
+
+.head{
+  margin: 5px 20px;
+  text-align: left;
+}
+
+#blur.active{
+  filter: blur(10px);
+}
+
+.contact{
+  padding: 30px 10px;
+  display: grid;
+  position: fixed;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%,-50%);
+  background-color: #ebc386;
+  width: 900px;
+  height: 300px;
+  border-radius: 2em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.5fr 1fr 1fr;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.contact.active{
+  visibility: visible;
+  opacity: 1;
+  top: 50%;
+}
+.close-btn{
+  transition: 0.3s;
+  top: 90%;
+  left: 97%;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  position: fixed;  
+}
+.close-btn:hover{
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  opacity: 1;
+}
+a{
+  text-decoration: none;
 }

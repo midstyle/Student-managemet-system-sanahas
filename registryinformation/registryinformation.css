@@ -1,0 +1,156 @@
+body{
+    background-image: url('normal_bg.jpg');
+    font-family:'Montserrat', sans-serif ;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+
+
+.menu{
+    background-color: #ebc386;
+    float: left;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+.sidenav {
+    text-align: left;
+    height: 100%; /* 100% Full-height */
+    width: 200px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #FCB500;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px; /* Place content 60px from the top */
+    transition: 0.2s; /* 0.5 second transition effect to slide in the sidenav */
+    right: 400px;
+    top: 100%;
+    opacity: 1;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+  }
+
+  .menumain a {
+    display: block;
+    font-size: 80px;
+    padding: 5px 8px 8px 50px;
+  }
+.menusub{
+  white-space: none;
+}
+  .menusub a {
+    display: inline-block;
+    font-size: 30px;
+    padding: 20px 8px 8px 40px;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  i:hover {
+    cursor: pointer;
+  }
+
+  .menumain a {
+    position: relative;
+  }
+  
+  .menumain a:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 140px;
+    background-color: rgb(94, 93, 93);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border: 1px;
+    border-radius: 5px;
+    padding: 5px 1px;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    z-index: 1;
+    left: 15px;
+    top: 110%;
+  }
+  
+  .menumain a:hover:before {
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+.sidenav.active {
+  text-align: left;
+  height: 100%; /* 100% Full-height */
+  width: 200; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #FCB500;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px; /* Place content 60px from the top */
+  transition: 0.2s; /* 0.5 second transition effect to slide in the sidenav */
+  visibility: visible;
+  opacity: 1;
+  left: 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#menuicon{
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  transition: 0.3s;
+}
+
+#menuicon.active{
+  position: fixed;
+  top: 40px;
+  left: 230px;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    width: 50px;
+    height: 50px;
+}
+
+button {
+    background-color: #e9b555;
+      position: relative;
+      top: 1px;
+      border-radius: 100%;
+      width: 60px;
+      height: 60px;
+      padding: 3px;
+      box-shadow: 0px 0px 25px 5px rgb(102, 102, 102);
+      transition: 0.4s ease;
+  }
+
+h1{
+    margin: 60px 0;
+}
+
+.container{
+    display: grid;
+}
