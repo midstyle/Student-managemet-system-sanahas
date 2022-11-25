@@ -152,5 +152,39 @@ h1{
 }
 
 .container{
+    align-items: center;
+    width: 100vh ;
     display: grid;
+    padding: 80px 0;
+    margin: 0 60vh;
+    grid-template-columns: auto auto;
+    grid-gap: 40px 300px;
+}
+
+.container div{
+  margin: 0;
+  text-align: left;
+}
+
+.image-block{
+  position: fixed;
+  width: 250px;
+  height: 250px;
+  background-color: rgb(216, 214, 214);
+  top: 20vh;
+  left: 15vh;
+  border-radius: 2em;
+  box-shadow: 2px 2px 1px gray ;
+}
+.image-block2{
+  text-align: center;
+  padding: 5px 0;
+  position: fixed;
+  width: 350px;
+  height: 250px;
+  background-color: rgb(216, 214, 214);
+  bottom: 4vh;
+  right: 13vh;
+  border-radius: 2em;
+  box-shadow: 2px 2px 1px gray ;
 }
