@@ -69,6 +69,18 @@
         var popupc = document.getElementById("popup-contact");
         popupc.classList.toggle("active");
       }
+      function toggle3() {
+        var blur = document.getElementById("blur");
+        blur.classList.toggle("active");
+        var popupco = document.getElementById("popup-color");
+        popupco.classList.toggle("active");
+      }
+      function toggle4(){
+        var blur = document.getElementById("blur");
+        blur.classList.toggle("active");
+        var popupad = document.getElementById("popup-add");
+        popupad.classList.toggle("active");
+      }
     </script>
 
     <h1>Registry</h1>
@@ -100,14 +112,17 @@
       <div>comment</div>
       <div class="rounded-corner3">Student 5</div>
       <div>98%</div>
-      <div class="edit"><i class="fa-solid fa-pen-to-square"></i></div>
+      <div class="edit">
+        <a href="#" onclick="toggle3()"
+          ><i class="fa-solid fa-pen-to-square"></i
+        ></a>
+      </div>
       <div><a href="#" onclick="toggle2()">+94</a></div>
       <div class="rounded-corner4">comment</div>
-      
     </div>
     <div class="adding-removing">
       <div class="adding-icon">
-        <button>
+        <button onclick="toggle4()">
           <i class="fa-solid fa-plus"></i>
         </button>
       </div>
@@ -117,7 +132,6 @@
         </button>
       </div>
     </div>
-    
 
     <div class="contact" id="popup-contact">
       <h1 class="head">Student's contact</h1>
@@ -135,6 +149,50 @@
       <button value="" class="close-btn" onclick="toggle2()">
         <i class="fa-solid fa-x"></i>
       </button>
+    </div>
+
+    <div id="popup-color">
+      <div class="circles">
+        <div class="green"></div>
+        <div class="orange"></div>
+        <div class="red"></div>
+        <button value="" class="close-btn" onclick="toggle3()">
+          <i class="fa-solid fa-x"></i>
+        </button>
+      </div>
+    </div>
+    <div id="popup-add">
+      <div class="leftside">
+        <h1 contenteditable="True">Student X</h1>
+        <div class="attendance">
+          <h3>Attendance:</h3>
+          <h3 class="box2"></h3>
+        </div>
+        <div class="progress-tr">
+          <h3>Progress track:</h3>
+          <div class="small-circles">
+            <div class="green-s"></div>
+            <div class="orange-s"></div>
+            <div class="red-s"></div>
+          </div>
+        </div>
+        <h3>Comments:</h3>
+        <div class="contact-p"><i class="fa-solid fa-phone"></i></div>
+        <div class="contact-a"><i class="fa-solid fa-house"></i></div>
+      </div>
+      <div class="rightside">
+        <h3 class="rtext">Team: </h3>
+        <h3 class="rtext">Age: </h3>
+        <div class="bio">
+        <h3 class="rtext">Bio: </h3>
+        <h3 class="biobox" contenteditable="True"></h3>
+      </div>
+      </div>
+      <div class="savebutton">
+        <a href="#">
+        <button class="savebtn" onclick="toggle4()">Save</button>
+      </a>
+      </div>
     </div>
   </body>
 </html>

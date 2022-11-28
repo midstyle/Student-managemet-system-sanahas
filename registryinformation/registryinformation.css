@@ -188,3 +188,30 @@ h1{
   border-radius: 2em;
   box-shadow: 2px 2px 1px gray ;
 }
+
+
+.contact{
+  height: 100%;
+  background-color: rgb(216, 214, 214);
+  padding: 3px 20px;
+  border-radius: 8px;
+}
+
+a{
+  color: #000;
+}
+.exitbutton{
+  position: fixed;
+  bottom: 6%;
+  left: 2%;
+
+}
+
+/* Media queries */
+
+@media screen and (max-width:1536px){
+  .image-block2{
+    height: 200px;
+    width: 250px;
+  }
+}
