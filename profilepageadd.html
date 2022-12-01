@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="registryinformation\registryinformation.css" />
-    <title>Registry information</title>
+    <link rel="stylesheet" href="profilepageadd\profilepageadd.css" />
+    <title>Add Profile</title>
     <script
       src="https://kit.fontawesome.com/0f45e95927.js"
       crossorigin="anonymous"
@@ -52,7 +52,6 @@
     <span id="menuicon">
       <button onclick="toggle()"><i class="fa-solid fa-bars"></i></button>
     </span>
-
     <script type="text/javascript">
       function toggle() {
         var menu = document.getElementById("mySidenav");
@@ -60,32 +59,51 @@
         var menuicon = document.getElementById("menuicon");
         menuicon.classList.toggle("active");
       }
+      function toggle2() {
+        var blur = document.getElementById("container");
+        blur.classList.toggle("active");
+        var popups = document.getElementById("popup-save");
+        popups.classList.toggle("active");
+        var blurimg = document.getElementById("blur");
+        blurimg.classList.toggle("active")
+        var blurimg2 = document.getElementById("blur2");
+        blurimg2.classList.toggle("active")
+      }
     </script>
-    <h1>Student Name</h1>
-    <div class="container">
-      <div>Name:</div>
+
+    <h1>Profile Page</h1>
+    <div id="container">
+      <div>Name: <span contenteditable="True"></span></div>
       <div></div>
-      <div>Class:</div>
+      <div>Role: <span contenteditable="True"></span></div>
       <div></div>
       <div>Contact Details:</div>
-      <div>Parents Contact Details:</div>
-      <div class="contact">+94</div>
-      <div class="contact">+94</div>
+      <div></div>
+      <div class="contact">Username: <span contenteditable="True"></span></div>
+      <div class="contact">Password: <span contenteditable="True"></span></div>
       <div class="contact">
-        <i class="fa-solid fa-house"></i> Lorem ipsum dolor sit.
+        <i class="fa-solid fa-phone"></i> +94
+        <span contenteditable="True"></span>
       </div>
       <div class="contact">
-        <i class="fa-solid fa-house"></i> Lorem ipsum dolor sit.
+        <i class="fa-solid fa-house"></i><span contenteditable="True"></span>
       </div>
-      <div>Team:</div>
-      <div>Age:</div>
+      <div>Age: <span contenteditable="True"></span></div>
+      <div></div>
     </div>
-    <div class="image-block"></div>
-    <div class="image-block2">biography</div>
+    <div class="image-block" id="blur"></div>
+    <div class="image-block2" id="blur2">biography</div>
     <div class="exitbutton">
-      <a href="registry.html">
+      <a href="profilepage.html">
         <button><i class="fa-solid fa-arrow-left"></i></button>
       </a>
+    </div>
+    <button class="savebtn" onclick="toggle2()">Save</button>
+    <a href="profilepage.html"><button class="delbtn">Delete</button></a>
+    <div id="popup-save">
+      <h1><i class="fa-regular fa-circle-check"></i></h1>
+      <h1>The contents was saved successfully</h1>
+      <a href="profilepage.html">click to return to profile page</a>
     </div>
   </body>
 </html>
