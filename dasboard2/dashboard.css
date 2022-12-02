@@ -167,3 +167,13 @@ a{
     left: 5%;
 }
 
+
+/* media queries */
+@media screen and (min-width:1920px){
+    .calendar_img{
+        width: 1200px;
+    }
+    img{
+        width: 1000px;
+    }
+}
